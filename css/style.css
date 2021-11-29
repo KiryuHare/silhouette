@@ -1,14 +1,57 @@
+body {
+  background-color: black;
+  color: white;
+}
+
 .linklist {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   list-style-type: none;
 }
 
 .linklist-item {
-  width: 10%;
+  flex-grow: 1;
+  height: 50px;
   background-color: brown;
+  outline-style: dotted;
+  outline-color: black;
+  text-align: center;
 }
 
-a {
+p {
   color: white;
 }
+
+#pagetitle {
+}
+
+.center {
+  text-align: center;
+}
+
+.region {
+  background-color: black;
+  height: 300px;
+  outline-style: inset;
+  margin: 10px 50px;
+}
+
+.twocolumn {
+  display: flex;
+}
+
+aside {
+  width: 200px;
+  position: relative;
+}
+
+.sidebar-item{ 
+  height: 50px;
+  background-color: blue;
+  color: white;
+}
+
+main {
+  flex-grow: 1;
+}
+
