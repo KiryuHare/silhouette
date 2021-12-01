@@ -2,6 +2,7 @@
 body {
   background-color: black;
   color: white;
+  font-family: "Yu Mincho","YuMincho",serif;
 }
 
 p {
@@ -30,11 +31,8 @@ a {
   justify-content: center;
   align-items: center;
   color: white;
+  font-family: sans-serif;
 }
-
-/* ページタイトル */
-/* #pagetitle {
-} */
 
 /* 汎用 */
 .center {
@@ -43,9 +41,28 @@ a {
 
 .region {
   background-color: black;
-  /* height: 300px; */
-  outline-style: inset;
-  margin: 10px 50px;
+  padding: 40px 60px;
+  height: fit-content;
+  clear: both;
+}
+
+.region .left-image {
+  float: left;
+  width: 300px;
+  height: auto;
+  margin: 10px;
+}
+
+.region .right-image {
+  float: right;
+  width: 300px;
+  height: auto;
+  margin: 10px;
+}
+
+.region .explain {
+  text-align: left;
+  margin: 10px;
 }
 
 .twocolumn {
@@ -66,6 +83,19 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.pagetop{
+  width: 200px;
+  height: 50px;
+  background-color: teal;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0px;
+  bottom: 50px;
 }
 
 main {
@@ -92,11 +122,94 @@ main {
 }
 
 .function-explain img {
-  width: 500px;
+  width: 400px;
   margin: 20px;
 }
 
 .function-explain p {
   text-align: left;
   margin: 40px;
+}
+
+/* Charactors */
+.charactor-introduce {
+  display: flex;
+  flex-direction: column;
+}
+
+.charactor-introduce h2 {
+  text-align: left;
+  margin: 10px 40px;
+}
+
+.charactor-introduce .character1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.charactor-introduce .character1 .chara-img {
+  height: 500px;
+  width: 250px;
+  margin: 10px;
+}
+.charactor-introduce .character1 .character2 {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.charactor-introduce .character1 .character2 p {
+  text-align: left;
+  margin: 10px;
+  flex-grow: 1;
+}
+
+.charactor-introduce .character1 .character2 .chara-making {
+  height: auto;
+  width: 500px;
+  margin: 40px;
+}
+
+/* Teams */
+.member-introduce {
+  display: flex;
+  flex-direction: column;
+}
+
+.member-introduce .member1 {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.member-introduce .member1 .member3 {
+  margin: 10px;
+}
+
+.member-introduce .member1 .member3 img {
+  height: 30px;
+  width: auto;
+  margin: 10px;
+}
+
+.member-introduce .member1 img {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+
+.member-introduce .member2 {
+  margin-top: 30px;
+}
+
+.member-introduce .member2 img {
+  width: 200px;
+  margin: 10px;
+  float: left;
+}
+
+.member-introduce .member2 p {
+  text-align: left;
+  margin: 10px;
 }
