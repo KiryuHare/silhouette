@@ -2,7 +2,7 @@
 body {
   background-color: black;
   color: white;
-  font-family: "Yu Mincho","YuMincho",serif;
+  font-family: "Yu Mincho", "YuMincho", serif;
 }
 
 p {
@@ -20,7 +20,7 @@ a {
 }
 
 .linklist-item {
-  flex-grow: 1;
+  flex-basis: 200px;
   background-color: brown;
   outline-style: solid;
   outline-color: black;
@@ -41,7 +41,7 @@ a {
 
 .region {
   background-color: black;
-  padding: 40px 60px;
+  /* padding: 40px 60px; */
   height: fit-content;
   clear: both;
 }
@@ -85,7 +85,7 @@ a {
   align-items: center;
 }
 
-.pagetop{
+.pagetop {
   width: 200px;
   height: 50px;
   background-color: teal;
@@ -103,6 +103,13 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+/* About */
+.about-item{
+  width: 90%;
+  margin: 20px;
+}
+
 
 /* Game System */
 .function-explain {
@@ -122,7 +129,7 @@ main {
 }
 
 .function-explain img {
-  width: 400px;
+  width: 70%;
   margin: 20px;
 }
 
@@ -148,8 +155,8 @@ main {
 }
 
 .charactor-introduce .character1 .chara-img {
-  height: 500px;
-  width: 250px;
+  height: auto;
+  width: 30%;
   margin: 10px;
 }
 .charactor-introduce .character1 .character2 {
@@ -167,7 +174,7 @@ main {
 
 .charactor-introduce .character1 .character2 .chara-making {
   height: auto;
-  width: 500px;
+  width: 80%;
   margin: 40px;
 }
 
@@ -212,4 +219,179 @@ main {
 .member-introduce .member2 p {
   text-align: left;
   margin: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  /* スマートフォン対応 */
+  footer {
+    height: 200px;
+  }
+
+  /* 画面上部のリンクリスト */
+  .linklist {
+    display: flex;
+    height: fit-content;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .linklist-item {
+    flex-grow: 1;
+    background-color: brown;
+    outline-style: solid;
+    outline-color: black;
+    text-align: center;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+  }
+
+  .twocolumn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex-grow: 1;
+    flex-basis: 200px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sidebar-item {
+    flex-grow: 1;
+    height: 50px;
+    background-color: blue;
+    border-style: solid;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .region {
+    background-color: black;
+    padding: 20px;
+    height: fit-content;
+    clear: both;
+  }
+
+  /* Game System */
+  .function-explain {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .function-explain div {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .function-explain h2 {
+    flex-grow: 1;
+    display: flex;
+    margin: 10px 40px;
+  }
+
+  .function-explain img {
+    width: 90%;
+    margin: 20px;
+  }
+
+  .function-explain p {
+    text-align: left;
+    margin: 40px;
+  }
+
+  /* Charactors */
+  .charactor-introduce {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .charactor-introduce h2 {
+    text-align: center;
+    margin: 10px 40px;
+  }
+
+  .charactor-introduce .character1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .charactor-introduce .character1 .chara-img {
+    height: 500px;
+    width: 250px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .charactor-introduce .character1 .character2 {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .charactor-introduce .character1 .character2 p {
+    text-align: left;
+    margin: 10px;
+    flex-grow: 1;
+  }
+
+  .charactor-introduce .character1 .character2 .chara-making {
+    height: auto;
+    width: 90%;
+  }
+
+  /* Teams */
+  .member-introduce {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .member-introduce .member1 {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .member-introduce .member1 .member3 {
+    margin: 10px;
+  }
+
+  .member-introduce .member1 .member3 img {
+    height: 30px;
+    width: auto;
+    margin: 10px;
+  }
+
+  .member-introduce .member1 img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+  }
+
+  .member-introduce .member2 {
+    margin-top: 30px;
+  }
+
+  .member-introduce .member2 img {
+    width: 200px;
+    margin: 10px;
+    float: left;
+  }
+
+  .member-introduce .member2 p {
+    text-align: left;
+    margin: 10px;
+  }
 }
