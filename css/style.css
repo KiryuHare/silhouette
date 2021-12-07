@@ -3,12 +3,14 @@ body {
   /* background-color: black; */
   color: white;
   font-family: "Yu Mincho", "YuMincho", serif;
-  background-image: url("../image/Silhouette_Title.png");
+  background-blend-mode: normal;
+  background-color: rgba(0, 0, 0, 1);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  background-blend-mode: multiply;
-  background-color: gray;
+  /* background-image: image(rgba(1, 1, 0, 0.25)), image(rgba(1, 1, 0, 0.25)); */
+  background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+    url("https://github.com/KiryuHare/SIlhouette_Homepage/blob/fb7bc91633b2d9a44349a1d75b2c8d5bcf5c7d2a/image/Silhouette_Title.PNG?raw=true");
 }
 
 p {
@@ -72,8 +74,9 @@ footer {
 }
 
 .region {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 40px 60px;
+  margin: 20px;
   height: max-content;
   clear: both;
 }
