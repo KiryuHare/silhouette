@@ -10,7 +10,9 @@ body {
   background-position: center;
   /* background-image: image(rgba(1, 1, 0, 0.25)), image(rgba(1, 1, 0, 0.25)); */
   background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
-    url("https://github.com/KiryuHare/SIlhouette_Homepage/blob/fb7bc91633b2d9a44349a1d75b2c8d5bcf5c7d2a/image/Silhouette_Title.PNG?raw=true");
+    /* url("https://github.com/KiryuHare/SIlhouette_Homepage/blob/fb7bc91633b2d9a44349a1d75b2c8d5bcf5c7d2a/image/Silhouette_Title.PNG?raw=true"); */
+    url("../image/Silhouette_Title.webp");
+
 }
 
 p {
@@ -138,6 +140,7 @@ footer {
   position: fixed;
   background-color: gray;
   background-blend-mode: overlay;
+  background-size: cover;
   background-image: url(../image/UI/Button.png);
   color: white;
   display: flex;
@@ -182,9 +185,7 @@ main {
 }
 
 /* Top */
-.titlePage img {
-  margin: 20px;
-}
+
 
 /* About */
 .about-item {
@@ -265,13 +266,14 @@ main {
 .charactor-introduce .character1 .character2 .chara-making {
   height: auto;
   width: 80%;
-  margin: 40px;
+  margin: 10px;
 }
 
 /* Teams */
 .member-introduce {
   display: flex;
   flex-direction: column;
+  width: 900px;
 }
 
 .member-introduce .member1 {
@@ -319,10 +321,19 @@ main {
   margin: 10px;
 }
 
+/* スマートフォン対応 */
 @media screen and (max-width: 800px) {
-  /* スマートフォン対応 */
+  main {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
   footer {
     margin-top: 200px;
+  }
+
+  .region {
+    padding: 10px;
   }
 
   /* 画面上部のリンクリスト */
@@ -334,6 +345,7 @@ main {
   }
 
   .linklist-item {
+    flex-basis: 150px;
     margin-top: 3px;
     flex-grow: 1;
     height: 50px;
@@ -363,15 +375,14 @@ main {
 
   .sidebar li {
     flex-grow: 1;
-    flex-basis: 200px;
-
+    flex-basis: 150px;
   }
 
   .sidebar-item {
     position: inherit;
     /* flex-grow: 1; */
-    height: 50px;
-    width: 200px;
+    height: 40px;
+    width: 160px;
     margin-left: auto;
     margin-right: auto;
     /* border-style: solid; */
@@ -382,8 +393,8 @@ main {
 
   /* Game System */
   .function-explain {
-    display: flex;
-    flex-direction: column;
+    width: auto;
+    height: auto;
   }
 
   .function-explain div {
@@ -410,8 +421,9 @@ main {
 
   /* Charactors */
   .charactor-introduce {
-    display: flex;
     flex-direction: column;
+    width: auto;
+    height: auto;
   }
 
   .charactor-introduce h2 {
@@ -448,13 +460,14 @@ main {
 
   .charactor-introduce .character1 .character2 .chara-making {
     height: auto;
-    width: 90%;
   }
 
   /* Teams */
   .member-introduce {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: auto;
   }
 
   .member-introduce .member1 {
@@ -481,11 +494,13 @@ main {
 
   .member-introduce .member2 {
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
   }
 
   .member-introduce .member2 img {
     width: 200px;
-    margin: 10px;
+    margin: auto;
     float: left;
   }
 
