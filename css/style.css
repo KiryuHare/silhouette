@@ -2,7 +2,7 @@
 body {
   /* background-color: black; */
   color: white;
-  font-family: "Yu Mincho", "YuMincho", serif;
+  font-family: "Hina Mincho", "Yu Mincho", "YuMincho", serif;
   background-blend-mode: normal;
   background-color: rgba(0, 0, 0, 1);
   background-size: cover;
@@ -37,8 +37,11 @@ h2 {
 
 .linklist-item {
   flex-basis: 200px;
-  background-color: brown;
-  outline-style: solid;
+  background-color: rgb(110, 29, 29);
+  background-image: radial-gradient(rgb(100, 14, 14), rgb(165, 0, 0));
+  background-blend-mode: overlay;
+  border-radius: 10px;
+  margin: 0px 3px;
   outline-color: black;
   text-align: center;
   height: auto;
@@ -47,23 +50,30 @@ h2 {
   justify-content: center;
   align-items: center;
   color: white;
-  font-family: sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 1.2em;
+}
+
+.linklist-item:hover {
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+  background-color: rgb(63, 8, 8);
+  color: gray;
 }
 
 header {
   height: 40px;
   background-color: black;
   font-size: 1.2em;
-  font-family: serif;
-  font-style: italic;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   padding-left: 10px;
   padding-top: 3px;
 }
+
 footer {
   height: 20px;
   background-color: black;
-  font-family: sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   color: gray;
   font-size: 1em;
   text-align: center;
@@ -122,22 +132,31 @@ footer {
 
 .sidebar-item {
   font-size: 1.2em;
-  border-style: ridge;
-  /* flex-grow: 1; */
   height: inherit;
   width: inherit;
   position: fixed;
-  background-color: blue;
+  background-color: gray;
+  background-blend-mode: overlay;
+  background-image: url(../image/UI/Button.png);
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.sidebar-item:hover {
+  background-color: #444;
+  color: gray;
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+}
+
 .pagetop {
   width: 200px;
   height: 50px;
-  background-color: teal;
+  background-color: gray;
+  background-blend-mode: overlay;
+  background-image: url(../image/UI/Button.png);
   color: white;
   display: flex;
   justify-content: center;
@@ -147,10 +166,22 @@ footer {
   bottom: 50px;
 }
 
+.pagetop:hover {
+  background-color: #444;
+  color: gray;
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+}
+
 main {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+}
+
+/* Top */
+.titlePage img{
+  margin: 20px;
 }
 
 /* About */
@@ -305,7 +336,7 @@ main {
     justify-content: center;
     align-items: center;
     color: white;
-    font-family: sans-serif;
+    font-family: "Zen Kaku Gothic New", sans-serif;
   }
 
   .twocolumn {
