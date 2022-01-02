@@ -109,11 +109,28 @@ footer {
   margin: 10px;
 }
 
+.region p{
+  margin: 10px 20px;
+}
+
 .region img {
-  width: 300px;
+  width: 400px;
   height: auto;
   margin: auto;
+  padding: 20px;
   /* text-align: unset; */
+}
+
+.special-message{
+  font-size: 2rem;
+  color: #AF0002;
+  padding-bottom: 30px;
+}
+
+.special-message span{
+  display: inline-block;
+  color: #850063;
+  transform: scale(-1,1);
 }
 
 .twocolumn {
@@ -345,6 +362,14 @@ p {
 
 /* スマートフォン対応 */
 @media screen and (max-width: 800px) {
+  .region .left {
+    float: none;
+  }
+  
+  .region .right {
+    float: none;
+  }
+
   main {
     margin-left: 10px;
     margin-right: 10px;
