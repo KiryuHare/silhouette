@@ -263,11 +263,15 @@ p {
 }
 
 .charactor-introduce .character1 .chara-img {
-  height: auto;
+  height: 80%;
   width: 30%;
   margin: 10px;
 }
-
+.charactor-introduce .character1 .chara-img img {
+  height: auto;
+  width: auto;
+  margin: 10px;
+}
 .charactor-introduce .character1 .character2 {
   flex-grow: 1;
   display: flex;
@@ -521,4 +525,8 @@ p {
     text-align: left;
     margin: 10px;
   }
+}
+
+#lightbox img{
+  background-color: black;
 }
