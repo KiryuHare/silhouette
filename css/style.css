@@ -375,9 +375,9 @@ p {
     margin-right: 10px;
   }
 
-  footer {
+  /* footer {
     margin-top: 200px;
-  }
+  } */
 
   .region {
     padding: 10px;
@@ -554,4 +554,8 @@ p {
 
 #lightbox img{
   background-color: black;
+}
+
+#introduction{
+  height: 500px;
 }
