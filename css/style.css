@@ -69,10 +69,20 @@ header {
   font-family: "Zen Kaku Gothic New", sans-serif;
   padding-left: 10px;
   padding-top: 3px;
+  display: flex;
+  justify-content: space-between;
 }
 
 header img {
   height: 90%;
+}
+
+header a{
+  margin: 2px;
+  color: white;
+  width: 200px;
+  text-align: center;
+  font-size: 1rem;
 }
 
 footer {
@@ -358,6 +368,15 @@ p {
 .member-introduce .member2 p {
   text-align: left;
   margin: 10px;
+}
+
+.purchase a{
+  color: white;
+  font-weight: bold;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  margin: 20px;
+  padding: 5px;
+  border: solid;
 }
 
 /* スマートフォン対応 */
